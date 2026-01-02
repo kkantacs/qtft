@@ -12,6 +12,10 @@ def quantile_loss(y_pred, y_true, q=0.5):
     return torch.max((q - 1) * error, q * error).mean()
 
 # --- Load data ---
+# We demonstrate the model using Axis Bank stock data; a similar procedure
+# is followed for the Seattle weather dataset.
+# Files: "AXISBANK.csv" and "seattle-weather.csv"
+
 df = pd.read_csv("AXISBANK.csv")
 cols = ['Open', 'High', 'Low', 'Prev Close', 'Last', 'VWAP']
 target_col = 'Close'
@@ -118,3 +122,4 @@ def count_parameters(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
 print(f"Trainable parameters: {count_parameters(model):,}")
+
