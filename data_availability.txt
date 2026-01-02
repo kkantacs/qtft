@@ -1,1 +1,2 @@
-The stock market dataset used in this work is publicly available from the National Stock Exchange of India (NSE) at https://www.nseindia.com (accessed on 2025-06-11).
+The Weather Prediction dataset used in this work is publicly available from Kaggle at https://www.kaggle.com/datasets/mahdiehhajian/seattle-weather/data
+The Stock Market dataset used in this work is publicly available from Kaggle at https://www.kaggle.com/datasets/rohanrao/nifty50-stock-market-data?select=AXISBANK.csv
